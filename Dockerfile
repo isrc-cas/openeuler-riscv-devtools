@@ -13,6 +13,7 @@ RUN apt-get update -qq \
 WORKDIR /root/
 COPY fw_payload_oe.elf ./
 COPY openEuler-preview.riscv64.qcow2 ./
+COPY vm_*.sh *.exp ./
 ADD qemu.20210207.tbz ./
 WORKDIR /root/qemu
 RUN git checkout v5.0.0 && git clean -fdx
