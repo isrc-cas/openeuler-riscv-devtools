@@ -17,6 +17,6 @@ expect {
 }
 expect {
 	eof	{break}
-	"root@openEuler"	{send "for i in vm_*.sh; do bash \$i; done\r"}
+	"root@openEuler"	{send "bash vm_import_pubkey.sh; bash vm_config.sh\r"}
 }
 interact
