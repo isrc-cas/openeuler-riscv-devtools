@@ -2,3 +2,5 @@
 /openEuler-preview.riscv64.qcow2
 /qemu.20210207.tbz
 /vm_import_pubkey.sh
+*.old
+*.tmp

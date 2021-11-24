@@ -16,7 +16,7 @@ yum install -y osc sudo
 adduser -p openEuler plctlab
 mkdir ~plctlab/.ssh
 cp ~/.ssh/authorized_keys ~plctlab/.ssh
-chown -R plctlab.plctlab ~plctlab.ssh
+chown -R plctlab.plctlab ~plctlab/.ssh
 
 # Disable password login
 grep ^Password /etc/ssh/sshd_config 

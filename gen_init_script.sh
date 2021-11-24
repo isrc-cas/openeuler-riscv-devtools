@@ -15,7 +15,7 @@ die () {
 }
 
 
-[ -f "$GEN_FILE" ] && mv -f "${GEN_FILE}{,.old}"
+[ -f "$GEN_FILE" ] && mv -f "${GEN_FILE}"{,.old}
 
 [ -f "$PUBKEY_FILE" ] || die "FATAL: Could not find $PUBKEY_FILE."
 
