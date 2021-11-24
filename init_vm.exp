@@ -1,6 +1,6 @@
 set timeout 60
 
-spawn scp -P 12055 vm_*.sh root@localhost
+spawn scp -P 12066 vm_*.sh root@localhost
 while 1 {
 	expect {
 		eof	{break}
@@ -11,7 +11,7 @@ while 1 {
 	}
 }
 
-spawn ssh -p 12055 root@localhost
+spawn ssh -p 12066 root@localhost
 expect {
 	"fingerprint"	{send "yes\r"}
 	"password:"	{send "openEuler12#$\r" }

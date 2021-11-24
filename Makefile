@@ -1,5 +1,5 @@
 run:
-	docker run --rm -ti -p 12055:12055 oerv:latest
+	docker run --rm -ti -p 12066:12066 oerv:latest
 
 build: prepare gen
 	(DATETAG=$$(date +%Y%m%d_%H%M) ; docker build . -t oerv:$$DATETAG -t oerv:latest )
