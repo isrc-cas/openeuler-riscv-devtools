@@ -1,0 +1,23 @@
+set timeout 60
+
+spawn scp -P 12055 vm_*.sh root@localhost
+while 1 {
+	expect {
+		eof	{break}
+		"fingerprint"	{send "yes\r"}
+		"password:"	{send "openEuler12#$\r" ; break}
+		"root@openEuler"	{send "for i in vm_*.sh; do bash '\$i'; done\r"}
+		"\\?"	{interact +}
+	}
+}
+
+spawn ssh -p 12055 root@localhost
+expect {
+	"fingerprint"	{send "yes\r"}
+	"password:"	{send "openEuler12#$\r" }
+}
+expect {
+	eof	{break}
+	"root@openEuler"	{send "for i in vm_*.sh; do bash '\$i'; done\r"}
+}
+interact

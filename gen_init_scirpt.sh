@@ -5,7 +5,7 @@
 
 
 
-GEN_FILE='import_pubkey.sh'
+GEN_FILE='vm_import_pubkey.sh'
 
 PUBKEY_FILE="$HOME/.ssh/id_rsa.pub"
 

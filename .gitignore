@@ -1,4 +1,4 @@
 /fw_payload_oe.elf
 /openEuler-preview.riscv64.qcow2
 /qemu.20210207.tbz
-/import_pubkey.sh
+/vm_import_pubkey.sh
