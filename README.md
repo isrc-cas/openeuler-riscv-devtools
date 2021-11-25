@@ -12,6 +12,11 @@
 ## 如何使用
 
 ```
+# if you have tmux
+make build && make tmux
+```
+
+```
 # top dir of this repo
 # two tmux windows or terminals are recommended
 tmux
