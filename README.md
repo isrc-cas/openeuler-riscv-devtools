@@ -31,5 +31,5 @@ expect init_vm.exp
 ```
 
 ## TODO
-- [ ] 完成 tmux 两个窗口的自动化有序创建
+- [x] 完成 tmux 两个窗口的自动化有序创建
 - [ ] `osc` 配置。
