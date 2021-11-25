@@ -16,6 +16,7 @@
 make build && make tmux
 ```
 
+如果你偏好直接使用terminal窗口：
 ```
 # top dir of this repo
 # two tmux windows or terminals are recommended
@@ -30,5 +31,5 @@ expect init_vm.exp
 ```
 
 ## TODO
-[ ] 完成 tmux 两个窗口的自动化有序创建
-[ ] `osc` 配置。
+- [ ] 完成 tmux 两个窗口的自动化有序创建
+- [ ] `osc` 配置。
