@@ -1,0 +1,7 @@
+
+set timeout 300
+spawn make run
+expect "login:"
+eval tmux send-keys -t oerv:ssh "expect init_vm.exp" C-m
+interact
+

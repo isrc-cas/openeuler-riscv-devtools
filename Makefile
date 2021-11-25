@@ -17,4 +17,6 @@ remove-downloads:
 	rm -f openEuler-preview.riscv64.qcow2
 	rm -f qemu.20210207.tbz
 
-.PHONY: run build try prepare remove-downloads gen
+tmux:
+	bash tmux_start.sh
+.PHONY: run build try prepare remove-downloads gen tmux
